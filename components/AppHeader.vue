@@ -4,7 +4,7 @@
       <div class="container">
         <div class="header-info">
           <div class="header-contact">
-            <span>📞 전화: 02-1234-5678</span>
+            <span>📞 전화: 010-0000-0000</span>
             <span>⏰ 상담시간: 평일 09:00-18:00</span>
           </div>
           <div>
@@ -16,9 +16,9 @@
     <div class="header-main">
       <div class="container">
         <nav role="navigation">
-          <NuxtLink to="/" class="logo" aria-label="행복한 재가노인요양원 홈">
+          <NuxtLink to="/" class="logo" aria-label="김해 힐링 재가노인복지센터 홈">
             🏠 <span class="logo-text">
-              <span class="logo-full">행복한 재가노인요양원</span>
+              <span class="logo-full">김해 힐링 재가노인복지센터</span>
               <span class="logo-short">행복재가요양</span>
             </span>
           </NuxtLink>

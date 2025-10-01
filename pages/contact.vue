@@ -118,16 +118,16 @@
 
 <script setup>
 useHead({
-  title: '문의하기 - 행복한 재가노인요양원',
+  title: '문의하기 - 김해 힐링 재가노인복지센터',
   meta: [
     { 
       name: 'description', 
-      content: '행복한 재가노인요양원 문의하기. 전화, 이메일, 카카오톡, 방문 상담 등 다양한 방법으로 연락주세요.' 
+      content: '김해 힐링 재가노인복지센터 문의하기. 전화, 이메일, 카카오톡, 방문 상담 등 다양한 방법으로 연락주세요.' 
     }
   ]
 })
 
-const phone = '02-1234-5678'
+const phone = '010-0000-0000'
 const email = 'care@happycare.kr'
 const address = '경상남도 김해시 봉황로'
 
