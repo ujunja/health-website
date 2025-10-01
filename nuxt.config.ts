@@ -6,9 +6,8 @@ export default defineNuxtConfig({
   ssr: false,
   
   app: {
-    // GitHub Pages용 baseURL 설정
-    // 저장소 이름을 여기에 입력하세요 (예: /lee-health-website/)
-    baseURL: process.env.NODE_ENV === 'production' ? '/lee-health-website/' : '/',
+    // GitHub Pages용 baseURL 설정 - 저장소 이름과 일치해야 함
+    baseURL: process.env.NODE_ENV === 'production' ? '/health-website/' : '/',
     buildAssetsDir: '/assets/',
     
     head: {
@@ -23,7 +22,7 @@ export default defineNuxtConfig({
         { name: 'keywords', content: '재가요양, 방문요양, 방문목욕, 노인요양, 장기요양' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/health-website/favicon.ico' },
         { 
           rel: 'stylesheet', 
           href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap' 
