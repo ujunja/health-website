@@ -4,11 +4,11 @@
       <div class="container">
         <div class="header-info">
           <div class="header-contact">
-            <span>📞 전화: 010-0000-0000</span>
+            <span>📞 전화: 02-1234-5678</span>
             <span>⏰ 상담시간: 평일 09:00-18:00</span>
           </div>
           <div>
-            <span>📧 sample@email.kr</span>
+            <span>📧 care@happycare.kr</span>
           </div>
         </div>
       </div>
@@ -16,8 +16,11 @@
     <div class="header-main">
       <div class="container">
         <nav role="navigation">
-          <NuxtLink to="/" class="logo" aria-label="김해 힐링 재가노인복지센터 홈">
-            🏠 김해 힐링 재가노인복지센터
+          <NuxtLink to="/" class="logo" aria-label="행복한 재가노인요양원 홈">
+            🏠 <span class="logo-text">
+              <span class="logo-full">행복한 재가노인요양원</span>
+              <span class="logo-short">행복재가요양</span>
+            </span>
           </NuxtLink>
           
           <ul class="nav-menu" role="menu">
@@ -54,7 +57,13 @@
     aria-label="모바일 메뉴"
   >
     <div class="mobile-nav-header">
-      <span class="logo" style="font-size: 18px;">🏠 김해 힐링 재가노인복지센터</span>
+      <div class="mobile-logo">
+        <span class="mobile-logo-icon">🏠</span>
+        <div class="mobile-logo-text">
+          <strong>행복재가요양</strong>
+          <small>어르신의 든든한 동반자</small>
+        </div>
+      </div>
       <button 
         class="mobile-nav-close" 
         @click="closeMobileMenu"
@@ -63,26 +72,36 @@
     </div>
     <ul class="mobile-nav-menu" role="menu">
       <li role="menuitem">
-        <NuxtLink to="/" :class="{ active: route.path === '/' }" @click="closeMobileMenu">홈</NuxtLink>
+        <NuxtLink to="/" :class="{ active: route.path === '/' }" @click="closeMobileMenu">
+          <span class="menu-icon">🏠</span>
+          <span>홈</span>
+        </NuxtLink>
       </li>
       <li role="menuitem">
-        <NuxtLink to="/about" :class="{ active: route.path === '/about' }" @click="closeMobileMenu">센터 소개</NuxtLink>
+        <NuxtLink to="/about" :class="{ active: route.path === '/about' }" @click="closeMobileMenu">
+          <span class="menu-icon">ℹ️</span>
+          <span>센터 소개</span>
+        </NuxtLink>
       </li>
       <li role="menuitem">
-        <NuxtLink to="/services" :class="{ active: route.path === '/services' }" @click="closeMobileMenu">서비스 안내</NuxtLink>
+        <NuxtLink to="/services" :class="{ active: route.path === '/services' }" @click="closeMobileMenu">
+          <span class="menu-icon">💝</span>
+          <span>서비스 안내</span>
+        </NuxtLink>
       </li>
       <li role="menuitem">
-        <NuxtLink to="/guide" :class="{ active: route.path === '/guide' }" @click="closeMobileMenu">이용 안내</NuxtLink>
+        <NuxtLink to="/guide" :class="{ active: route.path === '/guide' }" @click="closeMobileMenu">
+          <span class="menu-icon">📋</span>
+          <span>이용 안내</span>
+        </NuxtLink>
       </li>
       <li role="menuitem">
-        <NuxtLink to="/contact" :class="{ active: route.path === '/contact' }" @click="closeMobileMenu">문의하기</NuxtLink>
+        <NuxtLink to="/contact" :class="{ active: route.path === '/contact' }" @click="closeMobileMenu">
+          <span class="menu-icon">📞</span>
+          <span>문의하기</span>
+        </NuxtLink>
       </li>
     </ul>
-    <div class="mobile-nav-contact">
-      <p><strong>전화 상담</strong></p>
-      <p>📞 010-0000-0000</p>
-      <p>평일 09:00 - 18:00</p>
-    </div>
   </nav>
 </template>
 
@@ -178,7 +197,7 @@ header.scrolled {
 }
 
 .header-main {
-  padding: 15px 0;
+  padding: 12px 0;
 }
 
 @media (min-width: 768px) {
@@ -194,13 +213,13 @@ nav {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--primary-color);
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   transition: var(--transition);
 }
 
@@ -213,6 +232,29 @@ nav {
 
 .logo:hover {
   transform: translateY(-1px);
+}
+
+/* 로고 텍스트 반응형 처리 */
+.logo-text {
+  display: inline;
+}
+
+.logo-full {
+  display: none;
+}
+
+.logo-short {
+  display: inline;
+}
+
+@media (min-width: 480px) {
+  .logo-full {
+    display: inline;
+  }
+  
+  .logo-short {
+    display: none;
+  }
 }
 
 .nav-menu {
@@ -314,68 +356,119 @@ nav {
 .mobile-nav {
   position: fixed;
   top: 0;
-  right: -280px;
-  width: 280px;
+  right: -100%;
+  width: 85%;
+  max-width: 320px;
   height: 100%;
   background: white;
-  box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+  box-shadow: -5px 0 20px rgba(0,0,0,0.15);
   transition: right 0.3s ease;
   z-index: 1001;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-nav.active {
   right: 0;
 }
 
+/* 모바일 메뉴 헤더 */
 .mobile-nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
   border-bottom: 1px solid var(--border-color);
+  background: var(--bg-light);
+}
+
+.mobile-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.mobile-logo-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.mobile-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.mobile-logo-text strong {
+  font-size: 16px;
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+
+.mobile-logo-text small {
+  font-size: 11px;
+  color: var(--text-light);
+  line-height: 1.2;
 }
 
 .mobile-nav-close {
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 32px;
   cursor: pointer;
-  padding: 5px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--text-color);
+  flex-shrink: 0;
+  border-radius: 8px;
+  transition: var(--transition);
 }
 
+.mobile-nav-close:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* 모바일 메뉴 항목 */
 .mobile-nav-menu {
   list-style: none;
-  padding: 20px 0;
+  padding: 0;
+  margin: 0;
+  flex: 1;
 }
 
 .mobile-nav-menu a {
-  display: block;
-  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
   color: var(--text-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   transition: var(--transition);
   border-left: 3px solid transparent;
 }
 
-.mobile-nav-menu a:hover,
+.mobile-nav-menu a:hover {
+  background: var(--bg-light);
+}
+
 .mobile-nav-menu a.active {
   background: var(--bg-light);
   color: var(--secondary-color);
   border-left-color: var(--secondary-color);
 }
 
-.mobile-nav-contact {
-  padding: 20px;
-  background: var(--bg-light);
-  border-top: 1px solid var(--border-color);
-}
-
-.mobile-nav-contact p {
-  margin-bottom: 10px;
-  font-size: 16px;
+.menu-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
 }
 </style>
