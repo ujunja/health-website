@@ -13,6 +13,7 @@
     <section class="section">
       <div class="container">
         <h2 class="section-title">연락처 정보</h2>
+        <p class="section-subtitle">전화, 이메일, 카카오톡으로 문의하실 수 있습니다</p>
         <div class="contact-grid">
           <div class="contact-card">
             <div class="contact-icon">📞</div>
@@ -45,7 +46,7 @@
             <div class="contact-icon">📍</div>
             <h3>방문 상담</h3>
             <p class="contact-main">경상남도 김해시 봉황로</p>
-            <p>지하철 2호선 강남역 5번 출구</p>
+            <p>지하철 부전역 인근</p>
             <p>사전 예약 권장</p>
             <NuxtLink to="#location" class="btn btn-primary">오시는 길 보기</NuxtLink>
           </div>
@@ -53,94 +54,8 @@
       </div>
     </section>
     
-    <!-- 온라인 문의 양식 -->
-    <section class="section bg-light">
-      <div class="container">
-        <h2 class="section-title">온라인 문의</h2>
-        <p class="section-subtitle">아래 양식을 작성해주시면 빠르게 연락드리겠습니다</p>
-        
-        <form @submit.prevent="handleSubmit" class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">이름 <span class="required">*</span></label>
-              <input
-                type="text"
-                id="name"
-                v-model="form.name"
-                required
-                placeholder="성함을 입력해주세요"
-              />
-            </div>
-            
-            <div class="form-group">
-              <label for="phone">연락처 <span class="required">*</span></label>
-              <input
-                type="tel"
-                id="phone"
-                v-model="form.phone"
-                required
-                placeholder="010-0000-0000"
-              />
-            </div>
-          </div>
-          
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">이메일</label>
-              <input
-                type="email"
-                id="email"
-                v-model="form.email"
-                placeholder="이메일 주소를 입력해주세요"
-              />
-            </div>
-            
-            <div class="form-group">
-              <label for="service">문의 서비스</label>
-              <select id="service" v-model="form.service">
-                <option value="">선택해주세요</option>
-                <option value="방문요양">방문요양</option>
-                <option value="방문목욕">방문목욕</option>
-                <option value="치매케어">치매 전문 케어</option>
-                <option value="기타">기타 문의</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="form-group">
-            <label for="message">문의 내용 <span class="required">*</span></label>
-            <textarea
-              id="message"
-              v-model="form.message"
-              rows="6"
-              required
-              placeholder="문의하실 내용을 자세히 작성해주세요"
-            ></textarea>
-          </div>
-          
-          <div class="form-checkbox">
-            <input
-              type="checkbox"
-              id="privacy"
-              v-model="form.privacy"
-              required
-            />
-            <label for="privacy">
-              개인정보 수집 및 이용에 동의합니다 <span class="required">*</span>
-            </label>
-          </div>
-          
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary btn-lg">
-              문의 보내기
-            </button>
-          </div>
-        </form>
-      </div>
-    </section>
-    
     <!-- 오시는 길 -->
-    <section id="location" class="section">
+    <section id="location" class="section bg-light">
       <div class="container">
         <h2 class="section-title">오시는 길</h2>
         
@@ -156,13 +71,13 @@
               <h3>대중교통</h3>
               <div class="transport-item">
                 <strong>🚇 지하철</strong>
-                <p>2호선 강남역 5번 출구에서 도보 5분</p>
+                <p>부산 도시철도 1호선 부전역 하차</p>
               </div>
               <div class="transport-item">
                 <strong>🚌 버스</strong>
                 <p>간선: 140, 144, 145</p>
                 <p>지선: 3412, 4412</p>
-                <p>정류장: 강남역 12번 출구</p>
+                <p>정류장: 봉황동 사거리</p>
               </div>
             </div>
             
@@ -182,49 +97,39 @@
         </div>
       </div>
     </section>
+
+    <!-- CTA 섹션 -->
+    <section class="section cta-section">
+      <div class="container text-center">
+        <h2 class="section-title">어르신의 행복한 노후, 함께 시작하세요</h2>
+        <p class="section-subtitle">전문 상담사가 친절하게 안내해 드립니다</p>
+        <div class="cta-buttons">
+          <a :href="`tel:${phone}`" class="btn btn-primary">
+            📞 전화 상담하기
+          </a>
+          <a :href="`mailto:${email}`" class="btn btn-secondary">
+            📧 이메일 문의하기
+          </a>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
-
 useHead({
-  title: '문의하기 - 김해 힐링 재가노인복지센터',
+  title: '문의하기 - 행복한 재가노인요양원',
   meta: [
     { 
       name: 'description', 
-      content: '김해 힐링 재가노인복지센터 문의하기. 전화, 이메일, 카카오톡, 방문 상담 등 다양한 방법으로 연락주세요.' 
+      content: '행복한 재가노인요양원 문의하기. 전화, 이메일, 카카오톡, 방문 상담 등 다양한 방법으로 연락주세요.' 
     }
   ]
 })
 
-const phone = '010-0000-0000'
-const email = 'sample@email.kr'
+const phone = '02-1234-5678'
+const email = 'care@happycare.kr'
 const address = '경상남도 김해시 봉황로'
-
-const form = ref({
-  name: '',
-  phone: '',
-  email: '',
-  service: '',
-  message: '',
-  privacy: false
-})
-
-const handleSubmit = () => {
-  // 실제 구현 시 여기에 폼 제출 로직 추가
-  alert('문의가 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.')
-  
-  // 폼 리셋
-  form.value = {
-    name: '',
-    phone: '',
-    email: '',
-    service: '',
-    message: '',
-    privacy: false
-  }
-}
 
 const openKakao = () => {
   // 실제 구현 시 카카오톡 채널 연결
@@ -271,6 +176,10 @@ const openKakao = () => {
 
 .bg-light {
   background: var(--bg-light);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .contact-grid {
@@ -342,100 +251,6 @@ const openKakao = () => {
 .contact-card .btn {
   margin-top: 15px;
   width: 100%;
-}
-
-/* 폼 스타일 */
-.contact-form {
-  max-width: 800px;
-  margin: 40px auto 0;
-  background: white;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: var(--shadow-md);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-@media (min-width: 640px) {
-  .form-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.form-group {
-  margin-bottom: 0;
-}
-
-.form-group label {
-  display: block;
-  font-size: 16px;
-  color: var(--text-color);
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-.required {
-  color: var(--accent-color);
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 12px 15px;
-  font-size: 16px;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  background: white;
-  transition: var(--transition);
-  font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--secondary-color);
-  box-shadow: 0 0 0 3px rgba(0, 150, 136, 0.1);
-}
-
-.form-group textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 25px 0;
-}
-
-.form-checkbox input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.form-checkbox label {
-  font-size: 15px;
-  color: var(--text-light);
-  cursor: pointer;
-}
-
-.form-actions {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.btn-lg {
-  padding: 18px 50px;
-  font-size: 18px;
 }
 
 /* 오시는 길 */
@@ -525,5 +340,45 @@ const openKakao = () => {
   .map-placeholder {
     height: 500px;
   }
+}
+
+/* CTA 섹션 */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #002244 100%);
+  color: white;
+}
+
+.cta-section .section-title {
+  color: white;
+}
+
+.cta-section .section-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-section .btn-primary {
+  background: white;
+  color: var(--primary-color);
+}
+
+.cta-section .btn-primary:hover {
+  background: var(--bg-light);
+}
+
+.cta-section .btn-secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.cta-section .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 </style>
