@@ -8,7 +8,7 @@
             <span>⏰ 상담시간: 평일 09:00-18:00</span>
           </div>
           <div>
-            <span>📧 care@happycare.kr</span>
+            <span>📧 sample@email.kr</span>
           </div>
         </div>
       </div>

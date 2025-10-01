@@ -46,7 +46,7 @@
             <div class="contact-icon">📍</div>
             <h3>방문 상담</h3>
             <p class="contact-main">경상남도 김해시 봉황로</p>
-            <p>지하철 부전역 인근</p>
+            <p>김해시 수로왕릉역 인근</p>
             <p>사전 예약 권장</p>
             <NuxtLink to="#location" class="btn btn-primary">오시는 길 보기</NuxtLink>
           </div>
@@ -71,12 +71,12 @@
               <h3>대중교통</h3>
               <div class="transport-item">
                 <strong>🚇 지하철</strong>
-                <p>부산 도시철도 1호선 부전역 하차</p>
+                <p>김해시 수로왕릉역 하차</p>
               </div>
               <div class="transport-item">
                 <strong>🚌 버스</strong>
-                <p>간선: 140, 144, 145</p>
-                <p>지선: 3412, 4412</p>
+                <p>간선: 3-1</p>
+                <p>지선: 8</p>
                 <p>정류장: 봉황동 사거리</p>
               </div>
             </div>
@@ -128,7 +128,7 @@ useHead({
 })
 
 const phone = '010-0000-0000'
-const email = 'care@happycare.kr'
+const email = 'sample@email.kr'
 const address = '경상남도 김해시 봉황로'
 
 const openKakao = () => {
