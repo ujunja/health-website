@@ -46,7 +46,7 @@
             <div class="contact-icon">📍</div>
             <h3>방문 상담</h3>
             <p class="contact-main">경상남도 김해시 봉황로</p>
-            <p>지하철 부전역 인근</p>
+            <p>김해시 수로왕릉역 인근</p>
             <p>사전 예약 권장</p>
             <NuxtLink to="#location" class="btn btn-primary">오시는 길 보기</NuxtLink>
           </div>
@@ -71,12 +71,12 @@
               <h3>대중교통</h3>
               <div class="transport-item">
                 <strong>🚇 지하철</strong>
-                <p>부산 도시철도 1호선 부전역 하차</p>
+                <p>김해시 수로왕릉역 하차</p>
               </div>
               <div class="transport-item">
                 <strong>🚌 버스</strong>
-                <p>간선: 140, 144, 145</p>
-                <p>지선: 3412, 4412</p>
+                <p>간선: 3-1</p>
+                <p>지선: 8</p>
                 <p>정류장: 봉황동 사거리</p>
               </div>
             </div>
@@ -118,17 +118,17 @@
 
 <script setup>
 useHead({
-  title: '문의하기 - 행복한 재가노인요양원',
+  title: '문의하기 - 김해 힐링 재가노인복지센터',
   meta: [
     { 
       name: 'description', 
-      content: '행복한 재가노인요양원 문의하기. 전화, 이메일, 카카오톡, 방문 상담 등 다양한 방법으로 연락주세요.' 
+      content: '김해 힐링 재가노인복지센터 문의하기. 전화, 이메일, 카카오톡, 방문 상담 등 다양한 방법으로 연락주세요.' 
     }
   ]
 })
 
-const phone = '02-1234-5678'
-const email = 'care@happycare.kr'
+const phone = '010-0000-0000'
+const email = 'sample@email.kr'
 const address = '경상남도 김해시 봉황로'
 
 const openKakao = () => {

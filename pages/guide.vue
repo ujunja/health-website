@@ -230,7 +230,7 @@ useHead({
   ]
 })
 
-const phone = '02-1234-5678'
+const phone = '010-0000-0000'
 
 const faqItems = [
   {
