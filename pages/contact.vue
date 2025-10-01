@@ -45,9 +45,8 @@
           <div class="contact-card">
             <div class="contact-icon">📍</div>
             <h3>방문 상담</h3>
-            <p class="contact-main">경상남도 김해시 봉황로</p>
-            <p>김해시 수로왕릉역 인근</p>
-            <p>사전 예약 권장</p>
+            <p class="contact-main">{{ address }}</p>
+            <p>봉황대공원 주차장 이용 가능</p>
             <NuxtLink to="#location" class="btn btn-primary">오시는 길 보기</NuxtLink>
           </div>
         </div>
@@ -72,11 +71,12 @@
               <div class="transport-item">
                 <strong>🚇 지하철</strong>
                 <p>김해시 수로왕릉역 하차</p>
+                <p>도보 약 10분 거리</p>
               </div>
               <div class="transport-item">
                 <strong>🚌 버스</strong>
-                <p>간선: 3-1</p>
-                <p>지선: 8</p>
+                <p>간선: 58, 59, 128</p>
+                <p>지선: 김해 3, 10번</p>
                 <p>정류장: 봉황동 사거리</p>
               </div>
             </div>
@@ -89,10 +89,7 @@
           </div>
           
           <div class="map-container">
-            <div class="map-placeholder">
-              <p>지도 영역</p>
-              <p class="map-notice">실제 운영 시 네이버/카카오 지도 API 연동</p>
-            </div>
+            <KakaoMap />
           </div>
         </div>
       </div>
@@ -129,7 +126,7 @@ useHead({
 
 const phone = '010-0000-0000'
 const email = 'sample@email.kr'
-const address = '경상남도 김해시 봉황로'
+const address = '경상남도 김해시 분성로272번길 2-10'
 
 const openKakao = () => {
   // 실제 구현 시 카카오톡 채널 연결
@@ -305,6 +302,10 @@ const openKakao = () => {
   margin-bottom: 15px;
 }
 
+.transport-item:last-child {
+  margin-bottom: 0;
+}
+
 .transport-item strong {
   display: block;
   font-size: 16px;
@@ -317,29 +318,6 @@ const openKakao = () => {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
-}
-
-.map-placeholder {
-  height: 400px;
-  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: var(--text-light);
-}
-
-.map-notice {
-  font-size: 14px;
-  margin-top: 10px;
-  opacity: 0.7;
-}
-
-@media (min-width: 768px) {
-  .map-placeholder {
-    height: 500px;
-  }
 }
 
 /* CTA 섹션 */

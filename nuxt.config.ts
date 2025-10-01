@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     buildAssetsDir: '/assets/',
     
     head: {
-      title: '김해 힐링 재가노인복지센터 - 어르신의 든든한 동반자',
+      title: '행복한 재가노인요양원 - 어르신의 든든한 동반자',
       htmlAttrs: {
         lang: 'ko'
       },
@@ -38,6 +38,13 @@ export default defineNuxtConfig({
     preset: 'static',
     output: {
       publicDir: '.output/public'
+    }
+  },
+  
+  // 런타임 환경 변수
+  runtimeConfig: {
+    public: {
+      kakaoMapKey: process.env.NUXT_PUBLIC_KAKAO_MAP_KEY || ''
     }
   },
   

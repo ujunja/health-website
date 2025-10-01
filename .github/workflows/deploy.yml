@@ -36,6 +36,7 @@ jobs:
         run: npm run generate
         env:
           NODE_ENV: production
+          NUXT_PUBLIC_KAKAO_MAP_KEY: ${{ secrets.KAKAO_MAP_KEY }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
