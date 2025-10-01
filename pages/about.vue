@@ -22,7 +22,7 @@
           </div>
           <div class="about-image">
             <div class="about-image-placeholder">
-              센터 이미지
+              센터 이미지 업로드 예정
             </div>
           </div>
         </div>
