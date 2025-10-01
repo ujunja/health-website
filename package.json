@@ -1,0 +1,17 @@
+{
+  "name": "elderly-care-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "deploy": "gh-pages -d .output/public"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "nuxt": "^3.8.0",
+    "gh-pages": "^6.0.0"
+  }
+}
