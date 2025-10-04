@@ -18,8 +18,8 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes' },
-        { name: 'description', content: '어르신의 행복한 노후를 함께하는 전문 재가요양서비스. 가족요양, 방문목욕 서비스 제공' },
-        { name: 'keywords', content: '재가요양, 가족요양, 방문목욕, 노인요양, 장기요양' }
+        { name: 'description', content: '어르신의 행복한 노후를 함께하는 전문 재가요양서비스. 방문요양, 가족요양 서비스 제공' },
+        { name: 'keywords', content: '재가요양, 방문요양, 가족요양, 노인요양, 장기요양' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/health-website/favicon.ico' },
