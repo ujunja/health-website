@@ -131,47 +131,6 @@
               </tbody>
             </table>
           </div>
-          
-          <div class="cost-table">
-            <h3>등급별 월 한도액 (2025년 기준)</h3>
-            <table>
-              <thead>
-                <tr>
-                  <th>등급</th>
-                  <th>월 한도액</th>
-                  <th>본인부담금 (15%)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1등급</td>
-                  <td>1,997,000원</td>
-                  <td>약 299,550원</td>
-                </tr>
-                <tr>
-                  <td>2등급</td>
-                  <td>1,770,700원</td>
-                  <td>약 265,605원</td>
-                </tr>
-                <tr>
-                  <td>3등급</td>
-                  <td>1,371,200원</td>
-                  <td>약 205,680원</td>
-                </tr>
-                <tr>
-                  <td>4등급</td>
-                  <td>1,262,900원</td>
-                  <td>약 189,435원</td>
-                </tr>
-                <tr>
-                  <td>5등급</td>
-                  <td>1,068,500원</td>
-                  <td>약 160,275원</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
         
         <div class="cost-notice">
           <p>
@@ -230,7 +189,7 @@ useHead({
   ]
 })
 
-const phone = '010-0000-0000'
+const phone = '010-9396-8496'
 
 const faqItems = [
   {

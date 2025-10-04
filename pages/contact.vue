@@ -123,9 +123,9 @@ useHead({
   ]
 })
 
-const phone = '010-0000-0000'
-const email = 'sample@email.kr'
-const address = '경상남도 김해시 분성로272번길 2-10'
+const phone = '010-9396-8496'
+const email = 'lyni84@naver.com'
+const address = '경상남도 김해시 분성로 272번길 2-10. 김해 수로왕릉역 출구 김해도서관 방향 5분 거리.'
 
 const openKakao = () => {
   // 실제 구현 시 카카오톡 채널 연결

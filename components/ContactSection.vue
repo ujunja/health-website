@@ -8,13 +8,13 @@
         <div class="contact-item">
           <div class="contact-icon" aria-hidden="true">📞</div>
           <h3>전화 상담</h3>
-          <p><strong>010-0000-0000</strong></p>
+          <p><strong>010-9396-8496</strong></p>
           <p>평일 09:00 - 18:00</p>
         </div>
         <div class="contact-item">
           <div class="contact-icon" aria-hidden="true">📧</div>
           <h3>이메일</h3>
-          <p><a href="mailto:sample@email.kr">sample@email.kr</a></p>
+          <p><a href="mailto:lyni84@naver.com">lyni84@naver.com</a></p>
           <p>24시간 접수 가능</p>
         </div>
         <div class="contact-item">

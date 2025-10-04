@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-const phone = '010-0000-0000'
+const phone = '010-9396-8496'
 
 const scrollToTop = () => {
   window.scrollTo({

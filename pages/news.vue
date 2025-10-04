@@ -175,7 +175,7 @@ useHead({
   ]
 })
 
-const phone = '010-0000-0000'
+const phone = '010-9396-8496'
 
 // 공지사항 데이터
 const notices = ref([

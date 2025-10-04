@@ -4,11 +4,11 @@
       <div class="container">
         <div class="header-info">
           <div class="header-contact">
-            <span>📞 전화: 010-0000-0000</span>
+            <span>📞 전화: 010-9396-8496</span>
             <span>⏰ 상담시간: 평일 09:00-18:00</span>
           </div>
           <div>
-            <span>📧 sample@email.kr</span>
+            <span>📧 lyni84@naver.com</span>
           </div>
         </div>
       </div>
