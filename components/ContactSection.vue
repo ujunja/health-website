@@ -20,8 +20,8 @@
         <div class="contact-item">
           <div class="contact-icon" aria-hidden="true">📍</div>
           <h3>방문 상담</h3>
-          <p>경상남도 김해시 봉황로</p>
-          <p>지하철 2호선 강남역 5번 출구</p>
+          <p>김해시 분성로272번길 2-10</p>
+          <p>경전철 수로왕릉역 김해도서관 방향 5분 거리</p>
         </div>
         <div class="contact-item">
           <div class="contact-icon" aria-hidden="true">💬</div>
