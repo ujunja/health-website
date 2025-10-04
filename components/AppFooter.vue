@@ -16,8 +16,8 @@
         </div>
         <div class="footer-section">
           <h3>연락처</h3>
-          <p>📞 010-0000-0000</p>
-          <p>📧 sample@email.kr</p>
+          <p>📞 010-9396-8496</p>
+          <p>📧 lyni84@naver.com</p>
           <p>📍 경상남도 김해시 봉황로</p>
         </div>
         <div class="footer-section">
