@@ -131,6 +131,7 @@
               </tbody>
             </table>
           </div>
+        
         </div>
         
         <div class="cost-notice">
@@ -362,7 +363,7 @@ const faqItems = [
 
 @media (min-width: 768px) {
   .cost-tables {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 

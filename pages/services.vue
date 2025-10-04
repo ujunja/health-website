@@ -9,10 +9,10 @@
       </div>
     </section>
     
-    <!-- 방문요양 서비스 -->
+    <!-- 가족요양 서비스 -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">방문요양 서비스</h2>
+        <h2 class="section-title">가족요양 서비스</h2>
         <p class="section-subtitle">
           어르신이 익숙한 자택에서 편안하고 안정적인 노후를 보내실 수 있도록 지원합니다
         </p>
@@ -168,7 +168,7 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: '방문요양, 방문목욕, 치매 전문 케어 등 어르신을 위한 전문적인 재가요양서비스를 제공합니다.' 
+      content: '가족요양, 방문목욕, 치매 전문 케어 등 어르신을 위한 전문적인 재가요양서비스를 제공합니다.' 
     }
   ]
 })
