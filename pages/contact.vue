@@ -317,6 +317,9 @@ const openKakao = () => {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* CTA 섹션 */
