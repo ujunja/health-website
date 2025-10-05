@@ -36,7 +36,7 @@
           <div class="contact-card">
             <div class="contact-icon">💬</div>
             <h3>카카오톡 상담</h3>
-            <p class="contact-main">@행복재가요양</p>
+            <p class="contact-main">@힐링재가노인복지센터</p>
             <p>실시간 상담 가능</p>
             <p>빠른 답변 보장</p>
             <button class="btn btn-primary" @click="openKakao">카카오톡 추가</button>
@@ -70,20 +70,20 @@
               <h3>대중교통</h3>
               <div class="transport-item">
                 <strong>🚇 지하철</strong>
-                <p>김해시 수로왕릉역 하차</p>
-                <p>도보 약 10분 거리</p>
+                <p>김해 수로왕릉역 출구 하차</p>
+                <p>도서관 방향 도보 약 5분 거리</p>
               </div>
               <div class="transport-item">
                 <strong>🚌 버스</strong>
-                <p>간선: 58, 59, 128</p>
-                <p>지선: 김해 3, 10번</p>
+                <p>간선: 44, 58, 59, 128</p>
+                <p>지선: 3, 3-1, 8, 21-1번</p>
                 <p>정류장: 봉황동 사거리</p>
               </div>
             </div>
             
             <div class="info-section">
               <h3>자가용</h3>
-              <p>봉황대공원 주차장을 이용 가능</p>
+              <p>봉황대공원 주차장 이용 가능</p>
             </div>
           </div>
           
@@ -125,7 +125,7 @@ useHead({
 
 const phone = '010-9396-8496'
 const email = 'lyni84@naver.com'
-const address = '경상남도 김해시 분성로 272번길 2-10. 김해 수로왕릉역 출구 김해도서관 방향 5분 거리.'
+const address = '경상남도 김해시 분성로 272번길 2-10 (봉황동)'
 
 const openKakao = () => {
   // 실제 구현 시 카카오톡 채널 연결

@@ -26,7 +26,7 @@
         <div class="contact-item">
           <div class="contact-icon" aria-hidden="true">💬</div>
           <h3>카카오톡 상담</h3>
-          <p>@행복재가요양</p>
+          <p>@힐링재가노인복지센터</p>
           <p>실시간 상담 가능</p>
         </div>
       </div>

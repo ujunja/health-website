@@ -73,50 +73,8 @@
       <div class="container">
         <h2 class="section-title">가족요양 서비스</h2>
         <p class="section-subtitle">
-          전문 요양보호사 2명이 방문하여 안전하고 편안한 목욕 서비스를 제공합니다
+          가족이 자택 내에서 어르신을 돌보실 수 있도록 지원합니다.
         </p>
-        
-        <div class="bath-process">
-          <h3 class="text-center mb-20">서비스 과정</h3>
-          <div class="process-steps">
-            <div class="process-step">
-              <div class="step-number">1</div>
-              <h4>목욕 전</h4>
-              <p>혈압, 체온 등 어르신의 건강 상태를 확인합니다</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">2</div>
-              <h4>목욕 준비</h4>
-              <p>목욕 차량 또는 이동식 욕조 설치, 적절한 온도의 목욕물을 준비합니다</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">3</div>
-              <h4>목욕 실시</h4>
-              <p>어르신의 신체 상태에 맞춰 안전하게 전신 입욕, 머리 감기, 몸 씻기를 진행합니다</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">4</div>
-              <h4>목욕 후</h4>
-              <p>몸 말리기, 옷 갈아입기 도움, 필요시 피부 보습 관리를 합니다</p>
-            </div>
-            <div class="process-step">
-              <div class="step-number">5</div>
-              <h4>정리</h4>
-              <p>사용한 목욕 용품과 주변을 깨끗하게 정리합니다</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="service-info-box mt-20">
-          <h4>이용 대상</h4>
-          <p>노인장기요양등급 판정을 받으신 어르신</p>
-          
-          <h4>이용 횟수</h4>
-          <p>주 1회 이용 가능</p>
-          
-          <h4>서비스 인력</h4>
-          <p>전문 교육을 이수한 요양보호사 2명이 1팀으로 방문</p>
-        </div>
       </div>
     </section>
     
@@ -168,7 +126,7 @@ useHead({
   meta: [
     { 
       name: 'description', 
-      content: '방문요양, 방문목욕, 치매 전문 케어 등 어르신을 위한 전문적인 재가요양서비스를 제공합니다.' 
+      content: '방문요양, 가족요양, 치매 전문 케어 등 어르신을 위한 전문적인 재가요양서비스를 제공합니다.' 
     }
   ]
 })

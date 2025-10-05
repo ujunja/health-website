@@ -15,10 +15,10 @@
         <div class="about-content">
           <div class="about-text">
             <h2>내 부모님을 모시는 마음으로</h2>
-            <p>안녕하십니까. 김해 힐링 재가노인복지센터 대표 이연일입니다.</p>
+            <p>안녕하십니까. 김해 힐링 재가노인복지센터 대표 노순덕입니다.</p>
             <p>사랑과 배려 봉사로 어르신들을 안전하고 편안하게 지내시도록 도와드리겠습니다. 종사하시는 분들을 위해 투명하게 운영하며 신뢰받고 믿음이 가는 센터로 발전시키도록 하겠습니다.</p>
             <p>저희 센터를 방문하시는 모든 분들에게 감사드리며 가정에 건강과 행복이 충만하시길 기원드립니다.</p>
-            <p><strong>센터장 이 연 일 드림</strong></p>
+            <p><strong>센터장 노 순 덕 드림</strong></p>
           </div>
           <div class="about-image">
             <div class="about-image-placeholder">
@@ -48,7 +48,7 @@
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">❤️</div>
             <h3>핵심 가치</h3>
-            <p>존중, 신뢰, 전문성을 바탕으로 어르신 한 분 한 분의 행복한 삶을 위해 최선을 다하겠습니다.</p>
+            <p>TODO: 수정 예정</p>
           </article>
         </div>
       </div>
