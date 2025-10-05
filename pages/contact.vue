@@ -63,7 +63,6 @@
             <div class="info-section">
               <h3>주소</h3>
               <p>{{ address }}</p>
-              <p>행복빌딩 3층</p>
             </div>
             
             <div class="info-section">
@@ -125,7 +124,7 @@ useHead({
 
 const phone = '010-9396-8496'
 const email = 'lyni84@naver.com'
-const address = '경상남도 김해시 분성로 272번길 2-10 (봉황동)'
+const address = '경남 김해시 분성로 272번길 2-10 (봉황동)'
 
 const openKakao = () => {
   // 실제 구현 시 카카오톡 채널 연결

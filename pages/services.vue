@@ -14,9 +14,7 @@
       <div class="container">
         <h2 class="section-title">방문요양 서비스</h2>
         <p class="section-subtitle">
-          어르신이 익숙한 자택에서 편안하고 안정적인 노후를 보내실 수 있도록
-        </p>
-        <p class="section-subtitle">
+          어르신이 익숙한 자택에서 편안하고 안정적인 노후를 보내실 수 있도록<br>
           요양보호사가 가정으로 방문하여 서비스를 지원합니다
         </p>
         

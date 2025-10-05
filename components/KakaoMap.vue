@@ -39,7 +39,7 @@ const initMap = () => {
     const geocoder = new window.kakao.maps.services.Geocoder()
     
     // 주소로 좌표 검색
-    geocoder.addressSearch('경상남도 김해시 분성로272번길 2-10', (result, status) => {
+    geocoder.addressSearch('경남 김해시 분성로272번길 2-10', (result, status) => {
       if (status === window.kakao.maps.services.Status.OK) {
         const coords = new window.kakao.maps.LatLng(result[0].y, result[0].x)
         
