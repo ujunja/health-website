@@ -19,7 +19,7 @@
           <NuxtLink to="/" class="logo" aria-label="김해 힐링 재가노인복지센터 홈">
             🏠 <span class="logo-text">
               <span class="logo-full">김해 힐링 재가노인복지센터</span>
-              <span class="logo-short">행복재가요양</span>
+              <span class="logo-short">김해 힐링 요양</span>
             </span>
           </NuxtLink>
           
@@ -60,7 +60,7 @@
       <div class="mobile-logo">
         <span class="mobile-logo-icon">🏠</span>
         <div class="mobile-logo-text">
-          <strong>행복재가요양</strong>
+          <strong>김해 힐링</strong>
           <small>어르신의 든든한 동반자</small>
         </div>
       </div>
