@@ -21,9 +21,7 @@
             <p><strong>센터장 노 순 덕 드림</strong></p>
           </div>
           <div class="about-image">
-            <div class="about-image-placeholder">
-              센터 이미지 업로드 예정
-            </div>
+            <img src="~/assets/img/02_center_captain.jpg" alt="김해 힐링 재가노인복지센터 센터장 노순덕" />
           </div>
         </div>
       </div>
@@ -48,7 +46,7 @@
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">❤️</div>
             <h3>핵심 가치</h3>
-            <p>TODO: 수정 예정</p>
+            <p>사랑ㆍ배려ㆍ봉사의 마음을 실천하고 어르신을 편안하게 모시는 질 높은 서비스 제공</p>
           </article>
         </div>
       </div>
@@ -194,21 +192,11 @@ useHead({
   }
 }
 
-.about-image-placeholder {
-  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: var(--text-light);
-}
-
-@media (min-width: 768px) {
-  .about-image-placeholder {
-    height: 400px;
-    font-size: 24px;
-  }
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .cta-section {
