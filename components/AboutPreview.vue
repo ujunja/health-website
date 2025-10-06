@@ -9,9 +9,7 @@
           <NuxtLink to="/about" class="btn btn-primary mt-20">센터 소개 보기</NuxtLink>
         </div>
         <div class="about-image">
-          <div class="about-image-placeholder">
-            센터 이미지
-          </div>
+          <img src="~/assets/img/01_center.jpg" alt="김해 힐링 재가노인복지센터 전경" />
         </div>
       </div>
     </div>
@@ -95,21 +93,11 @@
   }
 }
 
-.about-image-placeholder {
-  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: var(--text-light);
-}
-
-@media (min-width: 768px) {
-  .about-image-placeholder {
-    height: 400px;
-    font-size: 24px;
-  }
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .mt-20 {
