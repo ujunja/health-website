@@ -46,7 +46,7 @@
             <div class="contact-icon">📍</div>
             <h3>방문 상담</h3>
             <p class="contact-main">{{ address }}</p>
-            <p>봉황대공원 주차장 이용 가능</p>
+            <p>봉황대 유적지 주차장 이용 가능</p>
             <NuxtLink to="#location" class="btn btn-primary">오시는 길 보기</NuxtLink>
           </div>
         </div>
@@ -82,7 +82,7 @@
             
             <div class="info-section">
               <h3>자가용</h3>
-              <p>봉황대공원 주차장 이용 가능</p>
+              <p>봉황대 유적지 주차장 이용 가능</p>
             </div>
           </div>
           
